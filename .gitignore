@@ -4,3 +4,9 @@ __pycache__/
 .DS_Store
 .env
 node_modules/
+
+# Generated public demo output
+/site/
+
+# Generated public demo output
+/site/

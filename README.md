@@ -1,7 +1,7 @@
 # Echo Canvas Lab
 
 <!-- project-navigation:start -->
-[Architecture](docs/ARCHITECTURE.md) · [Design choices](docs/DECISIONS.md) · [Portfolio](docs/PORTFOLIO.md)
+[Architecture](docs/ARCHITECTURE.md) · [Design choices](docs/DECISIONS.md) · [Portfolio](docs/PORTFOLIO.md) · [Demo and deployment](docs/DEPLOYMENT.md)
 <!-- project-navigation:end -->
 
 ![Echo Canvas Lab — generated result figure](docs/assets/reflection-paths.png)

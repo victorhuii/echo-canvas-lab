@@ -1,0 +1,32 @@
+{
+  "repo": "echo-canvas-lab",
+  "title": "Echo Canvas Lab",
+  "summary": "A local spatial-audio workbench with deterministic geometry, doorway routing, and revision-safe WebAudio controls.",
+  "image": "docs/assets/reflection-paths.png",
+  "image_kind": "Generated result figure",
+  "architecture": "docs/ARCHITECTURE.md",
+  "portfolio": "docs/PORTFOLIO.md",
+  "ownership": "Independent educational recreation",
+  "evidence": "Original code inspired by Kevin Yang; geometry and audio lifecycle checks.",
+  "limitation": "Inspired by Kevin Yang; no verified upstream source or original award ownership claimed.",
+  "output": "site",
+  "deployment_doc": "docs/DEPLOYMENT.md",
+  "decisions_doc": "docs/DECISIONS.md",
+  "decisions": [
+    [
+      "Deterministic bounded geometry",
+      "Make acoustic-path approximations visible and testable.",
+      "This is not architectural acoustic certification."
+    ],
+    [
+      "Worker revisions and audio lifecycle gates",
+      "Keep edits, diagnostics and audible parameters synchronized and reject stale results.",
+      "Browser audio/listening behavior still needs device-specific validation."
+    ],
+    [
+      "Browser-local WebAudio",
+      "Avoid hardware, upload services and paid generative calls.",
+      "Perceptual routing does not reproduce a full physical room solver."
+    ]
+  ]
+}
