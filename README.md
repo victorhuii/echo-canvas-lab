@@ -1,5 +1,13 @@
 # Echo Canvas Lab
 
+<!-- project-navigation:start -->
+[Architecture](docs/ARCHITECTURE.md) · [Design choices](docs/DECISIONS.md) · [Portfolio](docs/PORTFOLIO.md)
+<!-- project-navigation:end -->
+
+![Echo Canvas Lab — generated result figure](docs/assets/reflection-paths.png)
+
+*Generated result figure. Existing project evidence; this is not a browser screenshot.*
+
 A local workbench for sketching rooms and hearing an approximate spatial-audio model. Edit sources, listeners, walls, and doorways, then inspect the paths that drive browser HRTF playback.
 
 ![Echo Canvas Lab project cover](docs/assets/cover.png)
