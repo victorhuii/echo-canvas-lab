@@ -4,7 +4,9 @@
 
 **Mode:** Interactive browser demo.
 
-Package built and checked locally. Awaiting authenticated Cloudflare publishing; no live URL is claimed yet.
+Published to Cloudflare Pages. HTML, required assets, security headers and missing-API 404 behavior were verified.
+
+[Open interactive app](https://echo-canvas-lab.pages.dev)
 
 The complete existing geometry editor, worker, presets, import/export and audio graph run in the visitor’s browser. Files and audio remain local. No Python backend, database, account, model API or hardware is needed for the public app.
 
@@ -26,11 +28,11 @@ For a direct upload after local checks:
 ```sh
 python3 scripts/build_demo.py
 python3 scripts/check_demo.py
-npx wrangler pages project create echo-canvas-lab --production-branch main
-npx wrangler pages deploy site --project-name echo-canvas-lab
+npx wrangler pages project create --force echo-canvas-lab --production-branch main
+npx wrangler pages deploy --force site --project-name echo-canvas-lab
 ```
 
-Run the project-create command only for a new Pages project. Use the actual returned deployment URL. Git-connected Pages builds automatically from subsequent pushes; direct uploads must be repeated after changes. The `demo package` workflow validates and uploads a download-only artifact; it does not deploy or store a Cloudflare token.
+The `--force` option here selects the existing Pages command path when recent Wrangler versions default to Workers migration; it does not bypass application checks or overwrite a project. Run the project-create command only for a new Pages project. Use the actual returned deployment URL. Git-connected Pages builds automatically from subsequent pushes; direct uploads must be repeated after changes. The `demo package` workflow validates and uploads a download-only artifact; it does not deploy or store a Cloudflare token.
 
 ## Full application hosting
 

@@ -10,3 +10,6 @@ node_modules/
 
 # Generated public demo output
 /site/
+
+# Local Cloudflare tooling state
+.wrangler/
