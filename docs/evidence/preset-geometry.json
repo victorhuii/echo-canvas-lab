@@ -1,0 +1,782 @@
+{
+  "closed": {
+    "scene": {
+      "version": 1,
+      "name": "Doorway study",
+      "mode": "2.5d",
+      "room": {
+        "width": 12,
+        "depth": 8,
+        "height": 3,
+        "material": "wood"
+      },
+      "sources": [
+        {
+          "id": "source-a",
+          "name": "Tone A",
+          "x": 2,
+          "y": 2,
+          "z": 1.4,
+          "enabled": true,
+          "type": "tone",
+          "frequency": 220,
+          "gain": 0.35,
+          "assetId": null
+        },
+        {
+          "id": "source-b",
+          "name": "Noise B",
+          "x": 2,
+          "y": 6,
+          "z": 1.4,
+          "enabled": false,
+          "type": "noise",
+          "frequency": 440,
+          "gain": 0.2,
+          "assetId": null
+        }
+      ],
+      "listeners": [
+        {
+          "id": "listener-a",
+          "name": "Listener A",
+          "x": 10,
+          "y": 2,
+          "z": 1.6,
+          "yaw": 180
+        },
+        {
+          "id": "listener-b",
+          "name": "Listener B",
+          "x": 10,
+          "y": 6,
+          "z": 1.6,
+          "yaw": 180
+        }
+      ],
+      "activeListener": "listener-a",
+      "walls": [
+        {
+          "id": "wall-a",
+          "name": "Partition",
+          "x1": 6,
+          "y1": 0,
+          "x2": 6,
+          "y2": 8,
+          "zMin": 0,
+          "zMax": 3,
+          "material": "concrete",
+          "enabled": true,
+          "door": {
+            "enabled": false,
+            "center": 5,
+            "width": 1.4,
+            "height": 2.2
+          }
+        }
+      ]
+    },
+    "result": {
+      "revision": 1,
+      "listener": {
+        "id": "listener-a",
+        "name": "Listener A",
+        "x": 10,
+        "y": 2,
+        "z": 1.6,
+        "yaw": 180
+      },
+      "sources": [
+        {
+          "id": "source-a",
+          "direct": {
+            "kind": "occluded",
+            "points": [
+              {
+                "id": "source-a",
+                "name": "Tone A",
+                "x": 2,
+                "y": 2,
+                "z": 1.4,
+                "enabled": true,
+                "type": "tone",
+                "frequency": 220,
+                "gain": 0.35,
+                "assetId": null
+              },
+              {
+                "id": "listener-a",
+                "name": "Listener A",
+                "x": 10,
+                "y": 2,
+                "z": 1.6,
+                "yaw": 180
+              }
+            ],
+            "position": {
+              "id": "source-a",
+              "name": "Tone A",
+              "x": 2,
+              "y": 2,
+              "z": 1.4,
+              "enabled": true,
+              "type": "tone",
+              "frequency": 220,
+              "gain": 0.35,
+              "assetId": null
+            },
+            "length": 8.002499609497024,
+            "lossDb": 26,
+            "gain": 0.005567200837182529,
+            "blockedBy": [
+              "Partition"
+            ]
+          },
+          "reflections": [
+            {
+              "kind": "reflection",
+              "surface": "north",
+              "points": [
+                {
+                  "id": "source-a",
+                  "name": "Tone A",
+                  "x": 2,
+                  "y": 2,
+                  "z": 1.4,
+                  "enabled": true,
+                  "type": "tone",
+                  "frequency": 220,
+                  "gain": 0.35,
+                  "assetId": null
+                },
+                {
+                  "x": 6,
+                  "y": 0,
+                  "z": 1.5
+                },
+                {
+                  "id": "listener-a",
+                  "name": "Listener A",
+                  "x": 10,
+                  "y": 2,
+                  "z": 1.6,
+                  "yaw": 180
+                }
+              ],
+              "position": {
+                "x": 6,
+                "y": 0,
+                "z": 1.5
+              },
+              "length": 8.946507698538017,
+              "gain": 0.0314733096618408
+            },
+            {
+              "kind": "reflection",
+              "surface": "south",
+              "points": [
+                {
+                  "id": "source-a",
+                  "name": "Tone A",
+                  "x": 2,
+                  "y": 2,
+                  "z": 1.4,
+                  "enabled": true,
+                  "type": "tone",
+                  "frequency": 220,
+                  "gain": 0.35,
+                  "assetId": null
+                },
+                {
+                  "x": 6,
+                  "y": 8,
+                  "z": 1.5
+                },
+                {
+                  "id": "listener-a",
+                  "name": "Listener A",
+                  "x": 10,
+                  "y": 2,
+                  "z": 1.6,
+                  "yaw": 180
+                }
+              ],
+              "position": {
+                "x": 6,
+                "y": 8,
+                "z": 1.5
+              },
+              "length": 14.423591785682234,
+              "gain": 0.020296797347850927
+            }
+          ]
+        }
+      ],
+      "rt60": 0.7,
+      "mode": "2.5d"
+    }
+  },
+  "open": {
+    "scene": {
+      "version": 1,
+      "name": "Doorway study",
+      "mode": "2.5d",
+      "room": {
+        "width": 12,
+        "depth": 8,
+        "height": 3,
+        "material": "wood"
+      },
+      "sources": [
+        {
+          "id": "source-a",
+          "name": "Tone A",
+          "x": 2,
+          "y": 2,
+          "z": 1.4,
+          "enabled": true,
+          "type": "tone",
+          "frequency": 220,
+          "gain": 0.35,
+          "assetId": null
+        },
+        {
+          "id": "source-b",
+          "name": "Noise B",
+          "x": 2,
+          "y": 6,
+          "z": 1.4,
+          "enabled": false,
+          "type": "noise",
+          "frequency": 440,
+          "gain": 0.2,
+          "assetId": null
+        }
+      ],
+      "listeners": [
+        {
+          "id": "listener-a",
+          "name": "Listener A",
+          "x": 10,
+          "y": 2,
+          "z": 1.6,
+          "yaw": 180
+        },
+        {
+          "id": "listener-b",
+          "name": "Listener B",
+          "x": 10,
+          "y": 6,
+          "z": 1.6,
+          "yaw": 180
+        }
+      ],
+      "activeListener": "listener-a",
+      "walls": [
+        {
+          "id": "wall-a",
+          "name": "Partition",
+          "x1": 6,
+          "y1": 0,
+          "x2": 6,
+          "y2": 8,
+          "zMin": 0,
+          "zMax": 3,
+          "material": "concrete",
+          "enabled": true,
+          "door": {
+            "enabled": true,
+            "center": 5,
+            "width": 1.4,
+            "height": 2.2
+          }
+        }
+      ]
+    },
+    "result": {
+      "revision": 2,
+      "listener": {
+        "id": "listener-a",
+        "name": "Listener A",
+        "x": 10,
+        "y": 2,
+        "z": 1.6,
+        "yaw": 180
+      },
+      "sources": [
+        {
+          "id": "source-a",
+          "direct": {
+            "kind": "portal",
+            "points": [
+              {
+                "id": "source-a",
+                "name": "Tone A",
+                "x": 2,
+                "y": 2,
+                "z": 1.4,
+                "enabled": true,
+                "type": "tone",
+                "frequency": 220,
+                "gain": 0.35,
+                "assetId": null
+              },
+              {
+                "x": 6,
+                "y": 5,
+                "z": 1.5
+              },
+              {
+                "id": "listener-a",
+                "name": "Listener A",
+                "x": 10,
+                "y": 2,
+                "z": 1.6,
+                "yaw": 180
+              }
+            ],
+            "position": {
+              "x": 6,
+              "y": 5,
+              "z": 1.5
+            },
+            "length": 10.00199980003999,
+            "lossDb": 0,
+            "gain": 0.0908925666401453,
+            "blockedBy": [
+              "Partition"
+            ]
+          },
+          "reflections": [
+            {
+              "kind": "reflection",
+              "surface": "north",
+              "points": [
+                {
+                  "id": "source-a",
+                  "name": "Tone A",
+                  "x": 2,
+                  "y": 2,
+                  "z": 1.4,
+                  "enabled": true,
+                  "type": "tone",
+                  "frequency": 220,
+                  "gain": 0.35,
+                  "assetId": null
+                },
+                {
+                  "x": 6,
+                  "y": 0,
+                  "z": 1.5
+                },
+                {
+                  "id": "listener-a",
+                  "name": "Listener A",
+                  "x": 10,
+                  "y": 2,
+                  "z": 1.6,
+                  "yaw": 180
+                }
+              ],
+              "position": {
+                "x": 6,
+                "y": 0,
+                "z": 1.5
+              },
+              "length": 8.946507698538017,
+              "gain": 0.0314733096618408
+            },
+            {
+              "kind": "reflection",
+              "surface": "south",
+              "points": [
+                {
+                  "id": "source-a",
+                  "name": "Tone A",
+                  "x": 2,
+                  "y": 2,
+                  "z": 1.4,
+                  "enabled": true,
+                  "type": "tone",
+                  "frequency": 220,
+                  "gain": 0.35,
+                  "assetId": null
+                },
+                {
+                  "x": 6,
+                  "y": 8,
+                  "z": 1.5
+                },
+                {
+                  "id": "listener-a",
+                  "name": "Listener A",
+                  "x": 10,
+                  "y": 2,
+                  "z": 1.6,
+                  "yaw": 180
+                }
+              ],
+              "position": {
+                "x": 6,
+                "y": 8,
+                "z": 1.5
+              },
+              "length": 14.423591785682234,
+              "gain": 0.020296797347850927
+            }
+          ]
+        }
+      ],
+      "rt60": 0.6736871469419067,
+      "mode": "2.5d"
+    }
+  },
+  "studio": {
+    "scene": {
+      "version": 1,
+      "name": "Quiet studio",
+      "mode": "3d",
+      "room": {
+        "width": 12,
+        "depth": 8,
+        "height": 3,
+        "material": "absorber"
+      },
+      "sources": [
+        {
+          "id": "source-a",
+          "name": "Tone A",
+          "x": 2,
+          "y": 2,
+          "z": 1.4,
+          "enabled": true,
+          "type": "tone",
+          "frequency": 220,
+          "gain": 0.35,
+          "assetId": null
+        },
+        {
+          "id": "source-b",
+          "name": "Noise B",
+          "x": 2,
+          "y": 6,
+          "z": 1.4,
+          "enabled": false,
+          "type": "noise",
+          "frequency": 440,
+          "gain": 0.2,
+          "assetId": null
+        }
+      ],
+      "listeners": [
+        {
+          "id": "listener-a",
+          "name": "Listener A",
+          "x": 10,
+          "y": 2,
+          "z": 1.6,
+          "yaw": 180
+        },
+        {
+          "id": "listener-b",
+          "name": "Listener B",
+          "x": 10,
+          "y": 6,
+          "z": 1.6,
+          "yaw": 180
+        }
+      ],
+      "activeListener": "listener-a",
+      "walls": []
+    },
+    "result": {
+      "revision": 3,
+      "listener": {
+        "id": "listener-a",
+        "name": "Listener A",
+        "x": 10,
+        "y": 2,
+        "z": 1.6,
+        "yaw": 180
+      },
+      "sources": [
+        {
+          "id": "source-a",
+          "direct": {
+            "kind": "direct",
+            "points": [
+              {
+                "id": "source-a",
+                "name": "Tone A",
+                "x": 2,
+                "y": 2,
+                "z": 1.4,
+                "enabled": true,
+                "type": "tone",
+                "frequency": 220,
+                "gain": 0.35,
+                "assetId": null
+              },
+              {
+                "id": "listener-a",
+                "name": "Listener A",
+                "x": 10,
+                "y": 2,
+                "z": 1.6,
+                "yaw": 180
+              }
+            ],
+            "position": {
+              "id": "source-a",
+              "name": "Tone A",
+              "x": 2,
+              "y": 2,
+              "z": 1.4,
+              "enabled": true,
+              "type": "tone",
+              "frequency": 220,
+              "gain": 0.35,
+              "assetId": null
+            },
+            "length": 8.002499609497024,
+            "lossDb": 0,
+            "gain": 0.111080260302935,
+            "blockedBy": []
+          },
+          "reflections": [
+            {
+              "kind": "reflection",
+              "surface": "floor",
+              "points": [
+                {
+                  "id": "source-a",
+                  "name": "Tone A",
+                  "x": 2,
+                  "y": 2,
+                  "z": 1.4,
+                  "enabled": true,
+                  "type": "tone",
+                  "frequency": 220,
+                  "gain": 0.35,
+                  "assetId": null
+                },
+                {
+                  "x": 5.7333333333333325,
+                  "y": 2,
+                  "z": 0
+                },
+                {
+                  "id": "listener-a",
+                  "name": "Listener A",
+                  "x": 10,
+                  "y": 2,
+                  "z": 1.6,
+                  "yaw": 180
+                }
+              ],
+              "position": {
+                "x": 5.7333333333333325,
+                "y": 2,
+                "z": 0
+              },
+              "length": 8.54400374531753,
+              "gain": 0.011596780665577046
+            },
+            {
+              "kind": "reflection",
+              "surface": "ceiling",
+              "points": [
+                {
+                  "id": "source-a",
+                  "name": "Tone A",
+                  "x": 2,
+                  "y": 2,
+                  "z": 1.4,
+                  "enabled": true,
+                  "type": "tone",
+                  "frequency": 220,
+                  "gain": 0.35,
+                  "assetId": null
+                },
+                {
+                  "x": 6.266666666666667,
+                  "y": 2,
+                  "z": 3
+                },
+                {
+                  "id": "listener-a",
+                  "name": "Listener A",
+                  "x": 10,
+                  "y": 2,
+                  "z": 1.6,
+                  "yaw": 180
+                }
+              ],
+              "position": {
+                "x": 6.266666666666667,
+                "y": 2,
+                "z": 3
+              },
+              "length": 8.54400374531753,
+              "gain": 0.011596780665577046
+            },
+            {
+              "kind": "reflection",
+              "surface": "north",
+              "points": [
+                {
+                  "id": "source-a",
+                  "name": "Tone A",
+                  "x": 2,
+                  "y": 2,
+                  "z": 1.4,
+                  "enabled": true,
+                  "type": "tone",
+                  "frequency": 220,
+                  "gain": 0.35,
+                  "assetId": null
+                },
+                {
+                  "x": 6,
+                  "y": 0,
+                  "z": 1.5
+                },
+                {
+                  "id": "listener-a",
+                  "name": "Listener A",
+                  "x": 10,
+                  "y": 2,
+                  "z": 1.6,
+                  "yaw": 180
+                }
+              ],
+              "position": {
+                "x": 6,
+                "y": 0,
+                "z": 1.5
+              },
+              "length": 8.946507698538017,
+              "gain": 0.011127495344135858
+            },
+            {
+              "kind": "reflection",
+              "surface": "west",
+              "points": [
+                {
+                  "id": "source-a",
+                  "name": "Tone A",
+                  "x": 2,
+                  "y": 2,
+                  "z": 1.4,
+                  "enabled": true,
+                  "type": "tone",
+                  "frequency": 220,
+                  "gain": 0.35,
+                  "assetId": null
+                },
+                {
+                  "x": 0,
+                  "y": 2,
+                  "z": 1.4333333333333333
+                },
+                {
+                  "id": "listener-a",
+                  "name": "Listener A",
+                  "x": 10,
+                  "y": 2,
+                  "z": 1.6,
+                  "yaw": 180
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 2,
+                "z": 1.4333333333333333
+              },
+              "length": 12.001666550942002,
+              "gain": 0.008512733169416212
+            },
+            {
+              "kind": "reflection",
+              "surface": "east",
+              "points": [
+                {
+                  "id": "source-a",
+                  "name": "Tone A",
+                  "x": 2,
+                  "y": 2,
+                  "z": 1.4,
+                  "enabled": true,
+                  "type": "tone",
+                  "frequency": 220,
+                  "gain": 0.35,
+                  "assetId": null
+                },
+                {
+                  "x": 12,
+                  "y": 2,
+                  "z": 1.5666666666666667
+                },
+                {
+                  "id": "listener-a",
+                  "name": "Listener A",
+                  "x": 10,
+                  "y": 2,
+                  "z": 1.6,
+                  "yaw": 180
+                }
+              ],
+              "position": {
+                "x": 12,
+                "y": 2,
+                "z": 1.5666666666666667
+              },
+              "length": 12.001666550942002,
+              "gain": 0.008512733169416212
+            },
+            {
+              "kind": "reflection",
+              "surface": "south",
+              "points": [
+                {
+                  "id": "source-a",
+                  "name": "Tone A",
+                  "x": 2,
+                  "y": 2,
+                  "z": 1.4,
+                  "enabled": true,
+                  "type": "tone",
+                  "frequency": 220,
+                  "gain": 0.35,
+                  "assetId": null
+                },
+                {
+                  "x": 6,
+                  "y": 8,
+                  "z": 1.5
+                },
+                {
+                  "id": "listener-a",
+                  "name": "Listener A",
+                  "x": 10,
+                  "y": 2,
+                  "z": 1.6,
+                  "yaw": 180
+                }
+              ],
+              "position": {
+                "x": 6,
+                "y": 8,
+                "z": 1.5
+              },
+              "length": 14.423591785682234,
+              "gain": 0.007176001520517261
+            }
+          ]
+        }
+      ],
+      "rt60": 0.16512820512820514,
+      "mode": "3d"
+    }
+  }
+}
