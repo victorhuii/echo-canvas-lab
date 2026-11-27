@@ -22,7 +22,7 @@ export class AudioEngine {
  }
  async stop(){this.playing=false;if(this.context){this.set(this.master.gain,0);await this.context.suspend();}}
  mute(){if(this.context)this.set(this.master.gain,0);}
- async loadAsset(id,bytes){if(bytes.byteLength>20_000_000)throw Error('Audio file limit is 20 MB');const c=this.ensureContext();const buffer=await c.decodeAudioData(bytes.slice(0));if(buffer.duration>300)throw Error('Audio file limit is five minutes');this.assets.set(id,buffer);return buffer.duration;}
+ async loadAsset(id,bytes){if(bytes.byteLength>20_000_000)throw Error('Audio file limit is 20 MB');if(!this.assets.has(id)&&this.assets.size>=16)throw Error('Local audio cache is full; reload the page to clear unused audio');const c=this.ensureContext();const buffer=await c.decodeAudioData(bytes.slice(0));if(buffer.duration>120||buffer.numberOfChannels>2)throw Error('Use mono or stereo audio up to two minutes');this.assets.set(id,buffer);for(const [sourceId,node] of this.nodes)if(node.key==='file:'+id){this.release(node);this.nodes.delete(sourceId);}return buffer.duration;}
  createSource(source){
   const c=this.context;let input;
   if(source.type==='tone'){input=c.createOscillator();input.type='sine';input.frequency.value=source.frequency;}
